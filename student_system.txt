@@ -1,0 +1,80 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+
+    // --------------------
+   //  |   for practis    |
+  //   --------------------
+
+    cout << "\n\a******************** |System_Student| ********************\n";
+    // --------------------
+   //  |   new student    |
+  //   --------------------
+    cout << "\n \n \n \n \n ";
+    int loop ;
+    while (true)
+    {
+        cout << "\n****************************************\n"; 
+        string name;
+        cout << "enter student full name : \n";
+        getline(cin, name);
+
+        cout << "\n****************************************\n";
+        double date_barth;
+        cout << "enter date of barth (02.03.1999): \n";
+        cin >> date_barth;
+
+        cout << "\n****************************************\n";
+        string address;
+        cout << "enter your location home or address : \n";
+        cin >> address;
+
+        cout << "\n***************************************\n";
+        int phone;
+        cout << "enter your phone number : \n";
+        cin >> phone;
+
+        cout << "\n****************************************\n";
+        double grades;
+        cout << "enter grades test : \n";
+        cin >> grades;
+
+        cout << "\n****************************************\n";
+        int semester;
+        cout << "enter symester : \n";
+        cin >> semester;
+
+        cout << "\n****************************************\n";
+        double stude_fees;
+        cout << "enter stude fees money : \n";
+        cin >> stude_fees;
+
+        cout << "\n****************************************\n";
+        bool accept;
+        if (grades > 50) {
+            cout << "student arr accept wellcome :\n";
+        }
+        else
+        {
+            cout << "sorry student arr not accept see you again : \n";
+        }
+
+        cout << "\n****************************************\n";
+        char another_one;
+        cout << "do you need to enter anew student : enter 'y' for yes : enter 'n' for no \n";
+        cin >> another_one;
+        cout << "enter loop 0 for no 1 for yes : \n";
+        cin >> loop;
+
+            if (loop == 1 || another_one == 'y') {
+                continue;
+            }
+            else {
+                break;
+            }
+            cout << "\n****************************************\n";
+        }  
+    return 0;
+}
